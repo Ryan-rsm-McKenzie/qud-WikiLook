@@ -1,0 +1,6 @@
+{
+	"Author": "Ryan McKenzie",
+	"Description": "Adds a button to item descriptions to quickly look them up on the wiki.",
+	"ID": "RSM_WikiLook",
+	"Version": "1.0.0"
+}
