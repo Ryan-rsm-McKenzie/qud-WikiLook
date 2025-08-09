@@ -148,7 +148,7 @@ namespace WikiLook
 
 		private static void OpenWiki(GameObject go)
 		{
-			string search = WebUtility.UrlEncode(go.BaseDisplayNameStripped);
+			string search = WebUtility.UrlEncode(go.Blueprint);
 			string url = $"https://wiki.cavesofqud.com/index.php?search={search}&title=Special%3ASearch&go=Go";
 			Process.Start(url);
 		}
