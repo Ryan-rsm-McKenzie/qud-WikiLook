@@ -28,10 +28,9 @@ namespace WikiLook
 			matcher
 				.Start()
 				.MatchStartForward(new CodeMatch[] {
-					new(OpCodes.Call, AccessTools.Method(
+					new(OpCodes.Ldsfld, AccessTools.Field(
 						type: typeof(Options),
-						name: "get_ModernUI",
-						parameters: new Type[] {}
+						name: nameof(Options.ModernUI)
 					)),
 					new(OpCodes.Brfalse_S),
 				});
